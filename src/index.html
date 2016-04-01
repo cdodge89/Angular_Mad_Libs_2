@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Madlibs</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src='app.js'></script>
+</head>
+<body ng-app='madlibsGame'>
+	<header><h1>Angular Madlibs</h1></header>
+		<div class ='container'>
+			<div class='jumbotron' ng-controller='DisplayController as display'>
+				<div class='row'>
+					<div class='col-md-3 words'>
+						<p>Nouns:</p>
+						<p>Adjectives:</p>
+						<p>Verbs:</p>
+						<p>Adverbs:</p>
+					</div>
+					<div class='col-md-9'>
+						<form name='display.inputForm'>
+							<p><input type='text' name='nouns' placeholder='nouns' ng-model='display.userWords.nouns'></p>
+							<p><input type='text' name='adjectives' placeholder='adjectives' ng-model='display.userWords.adjectives'></p>
+							<p><input type='text' name='verbs' placeholder='verbs' ng-model='display.userWords.verbs'></p>
+							<p><input type='text' name='adverbs' placeholder='adverbs' ng-model='display.userWords.adverbs'></p>
+						</form>
+					</div>
+				</div>
+				<div class='row'>
+					<display-storytabs></display-storytabs>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

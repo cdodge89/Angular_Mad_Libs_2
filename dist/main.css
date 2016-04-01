@@ -1,0 +1,37 @@
+@import url(../dist/bower_components/bootstrap/dist/css/bootstrap.css);
+body {
+  background: #43cea2;
+  background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  background: linear-gradient(to left, #43cea2, #185a9d); }
+
+.container {
+  width: 60%; }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 4em; }
+
+.jumbotron {
+  color: rgba(1, 1, 1, 0.5); }
+
+input {
+  width: 100%;
+  padding-left: 10px; }
+
+.words p {
+  text-align: right;
+  font-size: 25px; }
+
+.story-tabs {
+  text-align: center; }
+
+li {
+  width: 33%;
+  background: rgba(10, 10, 10, 0.1); }
+
+.story {
+  margin-top: 20px;
+  font-size: 2em; }
+
+/*# sourceMappingURL=main.css.map */

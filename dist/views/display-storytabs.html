@@ -1,0 +1,27 @@
+<section class='story-tabs'>
+	<ul class='nav nav-pills'>
+		<li ng-class='{ active:tab.isSet(1) }'>
+			<a href ng-click='tab.setTab(1)'>George the Dragon Slayer</a>			
+		</li>
+		<li ng-class='{ active:tab.isSet(2) }'>
+			<a href ng-click='tab.setTab(2)'>Jack Ran Fast</a>
+		</li>
+		<li ng-class='{ active:tab.isSet(3) }'>
+			<a href ng-click='tab.setTab(3)'>Peter Piper's Pickled Peppers</a>
+		</li>
+	</ul>
+
+	<div ng-show="tab.isSet(1)" class ='story'>
+    George was a valiant <span>{{display.currentWords.nouns[0]}}</span>, the most valiant in all of the <span>{{display.currentWords.nouns[1]}}.</span> He <span>{{display.currentWords.adverbs[0]}}</span> saved <span>{{display.currentWords.nouns[2]}}</span> that needed help. One day, he recieved a <span>{{display.currentWords.adjectives[0]}}</span> message. The <span>{{display.currentWords.nouns[3]}}</span> was in danger! A great, big, <span>{{display.currentWords.adjectives[1]}}</span> dragon had stolen the <span>{{display.currentWords.nouns[4]}}</span> from the castle. George went and found that <span>{{display.currentWords.adjectives[2]}}</span> dragon and ran him through with his <span>{{display.currentWords.adjectives[3]}}</span> sword. He then proceeded to {{display.currentWords.verbs[0]}} a lot.
+  </div>
+
+  
+  <div ng-show="tab.isSet(2)" class ='story'>
+    Jack was a <span>{{display.currentWords.adjectives[0]}}</span> boy. He liked to <span>{{display.currentWords.verbs[0]}}</span> quite a bit. Once day, his <span>{{display.currentWords.adjectives[1]}}</span> mother sent him to go and fetch some <span>{{display.currentWords.nouns[0]}}</span>. He grabbed his <span>{{display.currentWords.nouns[1]}}</span> and ran <span>{{display.currentWords.adverbs[0]}}</span> to the top of the <span>{{display.currentWords.nouns[2]}}</span>. Once at the top, he gathered all of the <span>{{display.currentWords.nouns[3]}}</span> he could see. Jack then proceeded to <span>{{display.currentWords.verbs[1]}}</span> <span>{{display.currentWords.adverbs[1]}}</span> and he <span>{{display.currentWords.verbs[2]}}</span> all the way home.
+  </div>
+
+  
+  <div ng-show="tab.isSet(3)" class ='story'>
+    Peter Piper picked a peck of pickled <span>{{display.currentWords.nouns[0]}}</span>. He then <span>{{display.currentWords.adverbs[0]}}</span> quickly to the marketplace so that he could <span>{{display.currentWords.verbs[0]}}</span> them. Once he got there, he ran into the pickle<span>{{display.currentWords.nouns[1]}}</span>! With much trepidation he <span>{{display.currentWords.adverbs[1]}}</span> <span>{{display.currentWords.verbs[1]}}</span> somewhere else. His pickled <span>{{display.currentWords.nouns[2]}}</span> was hard to <span>{{display.currentWords.verbs[2]}}</span>, so he hid it in a <span>{{display.currentWords.adjectives[0]}}</span> box.
+  </div>
+</section>
